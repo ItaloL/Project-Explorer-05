@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-bg-color: #EFEFEF;
+    --second-bg-color: #535971;
+    --font-color: #4E4958;
+    --button-color: #ff5374;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-bg-color);
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--second-bg-color);
+    
+
+}
+
+.page{
+    width: 750px;
+    margin: auto;
+    margin-top: 140px;
+}
+
+header{
+    width: 417px;
+    margin-bottom: 58px;
+    color: white;
+}
+
+header h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 48px;
+    line-height: 60px; 
+    padding-bottom: 18px;
+}
+
+header p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+form{
+    min-height: 300px;
+    border-radius: 20px 20px 0 0;
+    background: white;
+    padding: 64px;  
+
+}
+
+form .wrapper{
+    border: none;
+}
+
+form .wrapper-legend{
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
+    width: 100%;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--font-color);
+
+    margin-bottom: 36px;
+}
+
+.wrapper-name{
+    display: flex;
+    gap: 22px;
+}
+
+
+
+.form-wrapper label{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--font-color);
+
+}
+
+.wrapper-name .form-wrapper input{
+    min-width: 300px;
+}
+
+.form-wrapper input{
+ 
+    width: 100%;
+    height: 56px;
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+    padding: 0 16px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form-wrapper label span{
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 9px;
+}
+
+footer{
+    padding: 52px 71px;
+    background: var(--second-bg-color);
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 366px;
+}
+
+footer input{
+    padding: 14.9px 279px;
+    background: var(--button-color);
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Staatliches';
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.wrapper-date{
+    display: flex;
+    gap: 32px;
+}
+
+#get-date{
+    width: 300px;
+
+}
+
+#get-beginhour{
+    width: 140px;
+}
+
+#get-endhour{
+    width: 140px;
+}
+
+
